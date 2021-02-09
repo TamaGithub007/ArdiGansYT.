@@ -39,9 +39,12 @@ const ffmpeg = require('fluent-ffmpeg')
 const cd = 4.32e+7
 const { removeBackgroundFromImageFile } = require('remove.bg')
 const { ind } = require('./language')
-const vcard = 'BEGIN:VCARD\n' // KASIH WM GUE
-            + 'VERSION:3.0\n' // ARDIGANSYT
-            + 'FN:PATRICK\n' // JANGAN NGEYEL AJG
+const vcard = 'BEGIN:VCARD\n' 
+// KASIH WM GUE
+            + 'VERSION:3.0\n' 
+// ARDIGANSYT
+            + 'FN:TAMAA\n' 
+// JANGAN NGEYEL AJG
             + 'ORG:OWNER BOTZ;\n'
             + 'TEL;type=CELL;type=VOICE;waid=6285282996146:+62 852-8299-6146\n' 
             + 'END:VCARD' 
@@ -54,9 +57,9 @@ cr = '*PATRICK 𝐁𝐎𝐓 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃*'
 /*
 ]=====> SETTINGS <=====[
 */
-const ownerNumber = ["62852829961460@s.whatsapp.net","6285559240360@s.whatsapp.net"]
-const botName = 'PATRICK 𝐁𝐎𝐓'
-const ownerName = 'PATRICK'
+const ownerNumber = ["62852829961460@s.whatsapp.net","6282373870884@s.whatsapp.net"]
+const botName = '𝗧𝗔𝗠𝗔𝗔 𝐁𝐎𝐓'
+const ownerName = 'PATRICKSTAR','TAMAA'
 const BarBarKey = 'IDxO1TFYnKADlX4pxcHa' // APIKEY DOWNLOAD FILE
 const VhtearKey = 'PUNYARAMLAN' // YANG DI YOUTUBE
 const TobzKey = 'BotWeA' // JANGAN MAU ENAK DOANG
@@ -88,7 +91,8 @@ const { gabut } = require('./database/menu/gabut')
 const { groupm } = require('./database/menu/group')
 const { download } = require('./database/menu/download')
 const { dompet } = require('./database/menu/dompet')
-const { random } = require('./database/menu/random')
+
+const { random } = require('./database/menu/random')
 const { other } = require('./database/menu/other')
 const { owb } = require('./database/menu/owb')
 const { maker } = require('./database/menu/maker')
@@ -398,7 +402,8 @@ client.on('group-participants-update', async (anu) => {
 			}
 		    const sendPtt = (teks) => {
 		    client.sendMessage(from, audio, mp3, {quoted:mek})
-		    }			
+		    }
+			
 /*
 ]=====> LEVELING <=====[
 */
